@@ -79,7 +79,6 @@ CXXFLAGS="$SLKCFLAGS" \
   --mandir=/usr/man \
   --build=$ARCH-slackware-linux
 
-#make
 install -m 0755 -d $PKG/etc
 install -m 0755 -d $PKG/etc/init.d
 install -m 0755 -d $PKG/usr/sbin
