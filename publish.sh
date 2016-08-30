@@ -9,7 +9,7 @@ then
   echo "Usage: ${0} PRGNAM"
   exit 1
 else
-  PRGNAM="${1}"
+  PRGNAM="$(basename ${1})"
 fi
 
 #
@@ -19,7 +19,10 @@ then
 fi
 
 #
-tar --exclude=KEYWORDS --exclude=CATEGORY -czvf ${PRGNAM}.tar.gz ${PRGNAM}
+tar \
+  --exclude=KEYWORDS \
+  --exclude=CATEGORY \
+  -czvf ${PRGNAM}.tar.gz ${PRGNAM}
 
 #
 echo -e "\n\nSlackBuild upload form: https://slackbuilds.org/submit/"
