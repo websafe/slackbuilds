@@ -72,16 +72,16 @@ find -L . \
 
 # Generate icons
 ICON_SIZES="256x256 192x192 128x128 96x96 64x64 48x48 32x32 16x16"
-ICON_FILES=$(ls $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons/Finals |grep png)
+ICON_FILES=$(ls $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons_04_CB/Finals | grep png)
 for i in $ICON_SIZES ; do
   mkdir -p $PKG/usr/share/icons/hicolor/$i/apps
   for j in $ICON_FILES; do
     if [ "$i" == "256x256" ];then
-      cp $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons/Finals/$j \
+      cp $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons_04_CB/Finals/$j \
          $PKG/usr/share/icons/hicolor/$i/apps/KeePass-$j
     else
       convert -resize $i \
-        $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons/Finals/$j \
+        $TMP/$PRGNAM-$VERSION/$PRGNAM-$VERSION-Source/Ext/Icons_04_CB/Finals/$j \
         $PKG/usr/share/icons/hicolor/$i/apps/KeePass-$j
     fi
   done
