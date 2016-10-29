@@ -1,0 +1,14 @@
+PRGNAM="KeePassHttp"
+VERSION="1.8.4.1"
+HOMEPAGE="https://github.com/pfn/keepasshttp"
+DOWNLOAD="https://raw.githubusercontent.com/pfn/keepasshttp/master/KeePassHttp.plgx \
+          https://raw.githubusercontent.com/pfn/keepasshttp/master/LICENSE \
+          https://raw.githubusercontent.com/pfn/keepasshttp/master/README.md"
+MD5SUM="78d2b692a2dc0014e4ec5a7aeadc13e5 \
+        d32239bcb673463ab874e80d47fae504 \
+        a600a98550df1c7c1310c26c0aca963b"
+DOWNLOAD_x86_64=""
+MD5SUM_x86_64=""
+REQUIRES="KeePass"
+MAINTAINER="Thomas Szteliga"
+EMAIL="ts@websafe.pl"
