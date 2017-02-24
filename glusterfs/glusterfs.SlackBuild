@@ -23,7 +23,7 @@
 # THE SOFTWARE.
 
 PRGNAM=glusterfs
-VERSION=${VERSION:-3.8.5}
+VERSION=${VERSION:-3.9.1}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -110,13 +110,9 @@ mv $PKG/etc/$PRGNAM/glusterfs-logrotate $PKG/etc/logrotate.d/glusterfs.new
 mv $PKG/etc/$PRGNAM/glusterfs-georep-logrotate \
   $PKG/etc/logrotate.d/glusterfs-georep.new
 
-install -D -m 0755 extras/init.d/glusterd-Redhat $PKG/etc/rc.d/rc.glusterd.new
+install -D -m 0644 extras/init.d/glusterd-Redhat $PKG/etc/rc.d/rc.glusterd.new
 
-cp -a \
-  COPYING-GPLV2 \
-  COPYING-LGPLV3 \
-  README.md \
-  $PKG/usr/doc/$PRGNAM-$VERSION
+cp -a COPYING-GPLV2 COPYING-LGPLV3 README.md $PKG/usr/doc/$PRGNAM-$VERSION
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
