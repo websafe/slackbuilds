@@ -7,13 +7,13 @@
 
        |-----handy-ruler------------------------------------------------------|
 sipcalc: sipcalc (advanced console based ip subnet calculator)
-sipcalc:
+sipcalc: 
 sipcalc: Sipcalc is an ip subnet calculator. Sipcalc, in its simplest form
 sipcalc: takes an ip-address and a subnet mask on the commandline and outputs
 sipcalc: information about the subnet. Sipcalc has support for both IPv4
 sipcalc: and IPv6 addresses.
 sipcalc:
-sipcalc: Project homepage: http://www.routemeister.net/projects/sipcalc/
+sipcalc:
 sipcalc:
 sipcalc:
 sipcalc:

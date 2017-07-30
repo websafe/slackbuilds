@@ -5,4 +5,3 @@ takes an ip-address and a subnet mask on the commandline and outputs
 information about the subnet. Sipcalc has support for both IPv4
 and IPv6 addresses.
 
-Project homepage: http://www.routemeister.net/projects/sipcalc/

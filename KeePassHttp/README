@@ -6,4 +6,3 @@ of exposing KeePass entries via HTTP for clients to consume.
 This plugin is primarily intended for use with PassIFox for Mozilla
 Firefox and chromeIPass for Google Chrome.
 
-Project homepage: https://github.com/pfn/keepasshttp
