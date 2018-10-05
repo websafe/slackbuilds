@@ -1,5 +1,5 @@
 PRGNAM="KeePassHttp"
-VERSION="1.8.4.2"
+VERSION="1.8.4.2.20181005"
 HOMEPAGE="https://github.com/pfn/keepasshttp"
 DOWNLOAD="https://github.com/pfn/keepasshttp/raw/7728a1cfb5c2a235ec5caf43217d4d39a32a92d9/KeePassHttp.plgx \
           https://github.com/pfn/keepasshttp/raw/7728a1cfb5c2a235ec5caf43217d4d39a32a92d9/LICENSE \
