@@ -2,7 +2,7 @@
 
 # Slackware build script for VeraCrypt
 
-# Copyright (c) 2016-2018 Thomas Szteliga <ts@websafe.pl>, Opole, PL
+# Copyright (c) 2016-2021 Thomas Szteliga <ts@websafe.pl>, Opole, PL
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +23,7 @@
 # THE SOFTWARE.
 
 PRGNAM=veracrypt
-VERSION=${VERSION:-1.22}
+VERSION=${VERSION:-1.24-Update7}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_SBo}
 
@@ -82,9 +82,10 @@ find $PKG -print0 | xargs -0 file | grep -e "executable" -e "shared object" | gr
 
 mkdir -p $PKG/usr/doc/$PRGNAM-$VERSION
 cp -a \
-  $PKG/usr/share/veracrypt/doc/* \
+  $PKG/usr/share/doc/veracrypt/* \
   $PKG/usr/doc/$PRGNAM-$VERSION
-rm -rf $PKG/usr/share/veracrypt
+rm -rf $PKG/usr/share/doc/veracrypt
+rm -rf $PKG/usr/share/doc
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM-$VERSION/$PRGNAM.SlackBuild
 
 mkdir -p $PKG/install
